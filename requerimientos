@@ -1,1 +1,68 @@
+DOCUMENTO DE ESPECIFICACIÓN DE REQUERIMIENTOS DE SOFTWARE (DRS)
+
+PROYECTO: AGENDA PERSONAL DE CITAS 
+
+1. INTRODUCCIÓN
+Este documento describe los requerimientos funcionales y no funcionales para el sistema de Agenda Personal de Citas versión 1.0.
+
+2. REQUERIMIENTOS FUNCIONALES 
+
+RF1	Creación de Citas: 
+El sistema debe permitir que el usuario crea una nueva cita, incluyendo campos para la fecha, hora, descripción/motivo, datos personales y lugar.
+Estado: Aprobado 
+
+RF2	Visualización de Calendario:
+El sistema debe mostrar al usuario una vista de calendario (diaria, semanal y mensual) con las citas programadas
+Estado: Aprobado 
+
+RF3	Edición y Eliminación: 
+El sistema debe permitir que el usuario pueda modificar cualquier detalle de una cita existente o eliminarla por completo. 
+Estado: Aprobado 
+
+RF4	Configuración de Recordatorio: 
+El sistema debe permitir que el usuario permita configurar un recordatorio (notificación o alarma) en un tiempo predeterminado antes de la cita (Ej. 15 minutos o 1 hora antes)
+Estado: Aprobado 
+
+RF5	Búsqueda y Filtro: 
+El sistema debe permitir que el usuario busque citas por palabas claves en la descripción o filtrar citas por contacto y rango de fechas.
+Estado: Aprobado 
+
+3. REQUERIMIENTOS NO FUNCIONALES 
+
+Los requerimientos no funcionales describen cualidades, restricciones o características de rendimiento que debe tener el sistema 
+
+RNF1	Portabilidad: 
+La aplicación debe ser compatible y funcionar correctamente en cualquier dispositivo (iOS y Android) y navegador web.
+Prioridad: Alta
+
+RNF2	Rendimiento de Carga: 
+La vista semanal del calendario (con hasta 50 citas) no debe tardar mas de 2 segundos en cargarse completamente para volver utilizarlo.
+Prioridad: Alta
+
+RNF3	Seguridad de Datos: 
+Las citas y los datos personales del usuario deben estar cifrados y protegidos mediante el inicio de sesión seguro (usuario y contraseña).
+Prioridad: Alta
+
+4. Requerimientos de Software (DRS)
+
+A.	Propósito y Alcance del Sistema
+
+El propósito principal de esta aplicación de agendamiento de citas es servir como una herramienta digital eficiente para que el usuario pueda gestionar, programar y recibir recordatorios de sus citas y eventos personales de manera organizada, sustituyendo el uso de agendas físicas.
+El alcance del sistema es específico para la gestión de citas, incluye: crear, editar, eliminar y buscar citas (RF1, RF3, RF5), mostrar el calendario (RF2) y configurar el recordatorio (RF4).
+No vamos a incluir funciones extras como el control del inventario o la compartición de calendarios con otros usuarios, gestión de tareas.
+
+B.	Descripción General del Sistema de los Usuarios
+
+La aplicación de agendas será una herramienta personal, intuitiva y fácil de usar, enfocada en la portabilidad (RNF1). El usuario accederá mediante un inicio de sesión seguro (RNF3). Podrá ver sus citas en diferentes vistas (diaria/semanal/mensual) y programar notificaciones (RF4) para que no se olvide.
+
+C.	Lista de Requerimientos 
+
+Todos los requerimientos importantes funcionales (RF1 al RF5) y los no funcionales (RNF1 al RNF3) están listados en la Sección I.
+
+D.	Criterios de Aceptación
+
+Estos son los puntos clave que se revisaran para garantizar que la Agenda Personal de Citas cumpla con su objetivo.
+Gestión Completa de Citas:  El usuario podrá crear una cita, editar todos sus campos y eliminar una cita, debe desaparecer de todas las vistas del calendario (basado en RF1 y RF2).
+Velocidad de Sincronización: Si el usuario crea una cita en el móvil y la quiere visualizar en la versión web, la cita debe de aparecer en el navegador en un tiempo no mayor a 3 segundos (basado en RF4).
+Acceso Único: Solo el usuario con las credenciales correctas debe poder acceder a la agenda y a la configuración de citas. Si se intenta acceder con credenciales incorrectas, el acceso debe ser bloqueado (basado en RNF3).
 
